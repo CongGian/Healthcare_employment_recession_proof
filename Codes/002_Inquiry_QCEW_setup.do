@@ -187,7 +187,7 @@ local naics4 "62_4dig 62_woSA_4dig 6231 6216 6211 6221"
 ********************************************************************************
 *F. Final Data Set 
 ********************************************************************************
-local naics4 "62_4dig 62_woSA_4dig 6231 6216 6211 6221"
+local naics4 "62_woSA_4dig 6231 6216 6211 6221"
 
 use "$finaldata/QCEW_cty_62_4dig.dta", clear
 foreach naics in `naics4' { 
