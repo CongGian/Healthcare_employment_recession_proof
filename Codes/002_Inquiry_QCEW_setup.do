@@ -185,9 +185,9 @@ local naics4 "62_4dig 62_woSA_4dig 6231 6216 6211 6221"
 	}
 
 ********************************************************************************
-*F. Final Data Set 
+*G. Final Data Set 
 ********************************************************************************
-local naics4 "62_woSA_4dig 6231 6216 6211 6221"
+local naics4 "62_4dig 62_woSA_4dig 6231 6216 6211 6221"
 
 use "$finaldata/QCEW_cty_62_4dig.dta", clear
 foreach naics in `naics4' { 
@@ -215,7 +215,7 @@ drop qtr_emp1
 save "$finaldata/QCEW_unemp_final.dta", replace // Final Data set
 
 ********************************************************************************
-*G. Erase Data  
+*h. Erase Data  
 ********************************************************************************
 local naics4 "62_4dig 62_woSA_4dig 6231 6216 6211 6221"
 
